@@ -49,7 +49,7 @@ We are a group of students who go by the name of PLA25. We visit the HvA, in Ams
 The Pollution Detection System is a web-based application that provides information about the pollution on earth. Both light pollution and air pollution are being monitored using this system.
 \\
 \indent
-The system uses sensors that can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
+The system uses so called "SensorHubs". SensorHubs are a combination of multiple sensors inside of a box. These SensorHubs can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
 
 \pagebreak
 
@@ -57,7 +57,11 @@ The system uses sensors that can be placed in a specific area to measure the pol
 ~\\
 
 \subsection{Login and the home page}
-The login page is simple, use your username and password to login to the website. This will redirect you to the homepage. On the top of this website there is a navigation bar, which is used to visit the several available pages.
+The login page is simple, use your username and password to login to the website. This will redirect you to the homepage.
+\\
+\indent
+On the top of this website there is a navigation bar, which is used to visit the several available pages.
+If you want to log out, simply click the logout button at the very end of the navigation bar.
 \\
 \indent
 Both the login page and home page contain buttons to switch between the languages Dutch and English.
@@ -73,8 +77,25 @@ This features a map which can show you all kinds of data regarding pollution. On
 There is also a search bar. With the search bar certain places like cities and towns can be found. Also, it can find a specific location by entering coordinates into the search bar.
 ~\\
 
-\subsection{The admin page}
-(Geen idee wat er hier precies moet komen.)
+\subsubsection{The heatmap}
+The heatmap shows a representation of the temperature, using colors scaling from bright pink (cold) to red (warm).
+~\\
 
+\subsubsection{Andere soorten}
+De andere soorten kaarten om weer te geven.
+
+\pagebreak
+
+\subsection{The admin page}
+This page is only available to admins, that is why it is called the admin page after all.
+\\
+\indent
+This page shows two tables. One table for the Users and one for the SensorHubs. With admin rights the user can change the data inside of these tables.
+\\
+\indent
+For example, the Users table contains data of all the users. With the add button you can add a user and with the delete button behind a specific user you can delete it. Then there is the edit button. The edit button is used to edit the profile of a specific user.
+\\
+\indent
+The SensorHub table simply shows the location of the used SensorHubs with pinpoints.
 
 \end{document}
