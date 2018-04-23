@@ -1,21 +1,20 @@
-%% De klasse van het document.
 \documentclass[a4paper]{article}
 
-%% De encoding van het document.
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
-%% De gegevens.
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
 \title{Pollution Detection System\\User Manual}
 \author{PLA25}
 
-%% Het document zelf.
 \begin{document}
 
 \clearpage
 \maketitle
 \vspace*{\fill}
-%% De groepsleden.
+
 \paragraph{Group members}
 ~\\\\
 \begin{tabbing}
@@ -49,8 +48,6 @@ The Pollution Detection System is a web-based application that provides informat
 \\
 The system uses so called "sensorhubs". Sensorhubs are a combination of multiple sensors inside of a box. These sensorhubs can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
 The system uses sensors that can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
-\\
-The system uses sensorhubs that can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
 
 \pagebreak
 
@@ -71,24 +68,27 @@ The login page is simple, use your username and password to login to the website
 \end{enumerate}
 
 \noindent
-This will redirect you to the home page.
+\includegraphics[width=\textwidth]{login}
+
+\noindent
+After completing these steps you are being redirected to the homepage.
 \\
-On the top of this website there is a navigation bar, which is used to visit the several available pages. These pages include: the home page the map page and (if you are an admin) the admin page.
+On the top of this website there is a navigation bar, which is used to visit the several available pages. These pages include: the home page the map page and the admin page. The latter is only shown if the current user is an admin.
 \\
 If you want to log out, simply click the logout button at the very end of the navigation bar.
 \\
 Both the login page and home page contain buttons to switch between the languages Dutch and English.
-~\\
+
+\pagebreak
 
 \subsubsection{The homepage}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 % * <thom.de.jong3@hva.nl> 2018-04-23T13:55:33.706Z:
 % 
-% In het bovenstaande deel komt er nog een beschrijving van de hoofdpagina.
+% Information about the homepage will be inserted above after the homepage is finished.
 % 
 % ^.
-
-\pagebreak
+~\\
 
 \subsection{The map page}
 This page is used for viewing the gathered data. The data is displayed on the map. This map is the website's main feature. It can be used when you want to view the data from the sensorhubs.
@@ -96,14 +96,18 @@ This page is used for viewing the gathered data. The data is displayed on the ma
 This page features a map which can show you all kinds of data regarding pollution. On the left side there is a sidebar. This sidebar contains many options that can be used, for example: filters with which you can enable the heatmap, light pollution map and more.
 \\
 There is also a search bar. With the search bar certain places like cities and towns can be found. Also, it can find a specific location by entering coordinates into the search bar.
-~\\
+
+\pagebreak
 
 \subsubsection{The heatmap}
 If you want to see the temperature measured by the sensorhubs, this is the right option.
 The heatmap shows a representation of the temperature, using colors scaling from bright pink (cold) to red (warm). The colours are displayed on the map as a layer over the standard map.
+~\\\\
+\noindent
+\includegraphics[width=\textwidth]{kaart}
 % * <thom.de.jong3@hva.nl> 2018-04-23T13:57:14.016Z:
 % 
-% Hier komen nog meer soorten kaarten.
+% Even more maps in the future.
 % 
 % ^.
 
@@ -117,16 +121,10 @@ This page shows two tables. One table for the Users and one for the sensorhubs. 
 For example, the Users table contains data of all the users. With the add button you can add a user and with the delete button behind a specific user you can delete it. Then there is the edit button. The edit button is used to edit the profile of a specific user.
 \\
 The sensorhub table simply shows the location of the used sensorhubs with pinpoints.
+~\\
 
-% * <thom.de.jong3@hva.nl> 2018-04-23T14:12:27.604Z:
-% 
-% Er moet nog een afsluiter komen volgens de studiehandleiding.
-%
-% \pagebreak
-%
-% \section{Afsluiter}
-% Afsluiten
-% 
-% ^.
+\section{Further help}
+PLA25 is responsible for making this web application. If any bugs are to be found, please do contact us.
+Also contact us if any further help is needed or something is not yet clear.
 
 \end{document}
