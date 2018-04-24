@@ -6,17 +6,22 @@
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 
+\usepackage{lipsum}
+
+\usepackage{enumitem,kantlipsum}
+
+\usepackage{verbatim}
+
 \title{Pollution Detection System\\User Manual}
 \author{PLA25}
 
 \begin{document}
 
-\clearpage
 \maketitle
 \vspace*{\fill}
 
 \paragraph{Group members}
-~\\\\
+~\newline
 \begin{tabbing}
 Joey Blankendaal \` 500778751
 \\
@@ -30,38 +35,38 @@ Rico Snoek \` 500778357
 \\
 Martijn Vegter \` 500775388
 \end{tabbing}
+% * <thom.de.jong3@hva.nl> 2018-04-24T12:00:48.468Z:
+% 
+% "\newline" in the list above does not work, used "\\" instead.
+% 
+% ^.
 \thispagestyle{empty}
-\setcounter{page}{0}
 \pagebreak
 \tableofcontents
 \pagebreak
 
-\section{Introduction}
-~\\
+\section{introduction}
+~\newline
 
 \subsection{Who are we?}
 We are a group of students who go by the name of PLA25. We visit the HvA, in Amsterdam.
-~\\
+~\newline
 
 \subsection{Our product}
 The Pollution Detection System is a web-based application that provides information about the pollution on earth. Both light pollution and air pollution are being monitored using this system.
-\\
+\newline
 The system uses so called "sensorhubs". Sensorhubs are a combination of multiple sensors inside of a box. These sensorhubs can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
 The system uses sensors that can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
 
 \pagebreak
 
-\section{The website and how it works}
-~\\
+\section{The website}
+~\newline
 
-\subsection{Login and the home page}
-This section will tell you about the basics: login, logout and the homepage. Here the instruction for logging in can be found. We'll start with the login.
-~\\
-
-\subsubsection{Login and Logout}
+\subsection{Login and Logout}
 The login page is simple, use your username and password to login to the website.
 
-\begin{enumerate}
+\begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
 \item Use the upper input field for your username.
 \item Use the lower one for your password.
 \item Finally, click the "login" button.
@@ -72,37 +77,37 @@ The login page is simple, use your username and password to login to the website
 
 \noindent
 After completing these steps you are being redirected to the homepage.
-\\
+\newline
 On the top of this website there is a navigation bar, which is used to visit the several available pages. These pages include: the home page the map page and the admin page. The latter is only shown if the current user is an admin.
-\\
+\newline
 If you want to log out, simply click the logout button at the very end of the navigation bar.
-\\
+\newline
 Both the login page and home page contain buttons to switch between the languages Dutch and English.
 
 \pagebreak
 
-\subsubsection{The homepage}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\subsection{The homepage}
+\lipsum[1-2]
 % * <thom.de.jong3@hva.nl> 2018-04-23T13:55:33.706Z:
 % 
 % Information about the homepage will be inserted above after the homepage is finished.
 % 
 % ^.
-~\\
+
+\pagebreak
 
 \subsection{The map page}
 This page is used for viewing the gathered data. The data is displayed on the map. This map is the website's main feature. It can be used when you want to view the data from the sensorhubs.
-\\
+\newline
 This page features a map which can show you all kinds of data regarding pollution. On the left side there is a sidebar. This sidebar contains many options that can be used, for example: filters with which you can enable the heatmap, light pollution map and more.
-\\
+\newline
 There is also a search bar. With the search bar certain places like cities and towns can be found. Also, it can find a specific location by entering coordinates into the search bar.
-
-\pagebreak
+~\newline
 
 \subsubsection{The heatmap}
 If you want to see the temperature measured by the sensorhubs, this is the right option.
 The heatmap shows a representation of the temperature, using colors scaling from bright pink (cold) to red (warm). The colours are displayed on the map as a layer over the standard map.
-~\\\\
+~\newline\newline
 \noindent
 \includegraphics[width=\textwidth]{kaart}
 % * <thom.de.jong3@hva.nl> 2018-04-23T13:57:14.016Z:
@@ -115,13 +120,14 @@ The heatmap shows a representation of the temperature, using colors scaling from
 
 \subsection{The admin page}
 This page is used to make changes to the system, e.g. user management. Just like the name says, this page is only available for admins. On this page you can change a user's data or that of a sensorhub.
-\\
+\newline
 This page shows two tables. One table for the Users and one for the sensorhubs. With admin rights the user can change the data inside of these tables.
-\\
+\newline
 For example, the Users table contains data of all the users. With the add button you can add a user and with the delete button behind a specific user you can delete it. Then there is the edit button. The edit button is used to edit the profile of a specific user.
-\\
+\newline
 The sensorhub table simply shows the location of the used sensorhubs with pinpoints.
-~\\
+
+\pagebreak
 
 \section{Further help}
 PLA25 is responsible for making this web application. If any bugs are to be found, please do contact us.
