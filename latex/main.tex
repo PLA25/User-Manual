@@ -1,5 +1,4 @@
 \documentclass[a4paper]{article}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lipsum}
@@ -36,10 +35,10 @@
 \section{Introduction}
 
 \subsection{Who are we?}
-We are a group of students who go by the name of PLA25. We visit the HvA, in Amsterdam.
+We are a group of students who go by the name of PLA25. We are currently studying at the HVA (Hogeschool van Amsterdam) in Amsterdam. Our group consists of software engineer students and technical information students.
 
 \subsection{Our product}
-The Pollution Detection System is a web-based application that provides information about the pollution on earth. Both light pollution and air pollution are being monitored using this system.
+The Pollution Detection System (PDS) is a web-based application that provides information about the pollution on earth. Both light pollution and air pollution are being monitored using this system.
 \newline
 The system uses so called "sensorhubs". Sensorhubs are a combination of multiple sensors inside of a box. These sensorhubs can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
 The system uses sensors that can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
@@ -48,7 +47,7 @@ The system uses sensors that can be placed in a specific area to measure the pol
 
 \section{The website}
 \subsection{Login and Logout}
-The login page is simple, use your username and password to login to the website.
+The login page is simple, use your username and password to login to the website. The website uses a role system, this means there are two roles a user of the website can be. You're either an admin or a user. 
 
 \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
 	\item Use the upper input field for your username.
@@ -57,7 +56,7 @@ The login page is simple, use your username and password to login to the website
 \end{enumerate}
 
 \noindent
-\includegraphics[width=\textwidth]{login}
+
 
 \noindent
 After completing these steps you are being redirected to the homepage.
@@ -71,13 +70,10 @@ Both the login page and home page contain buttons to switch between the language
 \pagebreak
 
 \subsection{The homepage}
-\lipsum[1-2]
-% * <thom.de.jong3@hva.nl> 2018-04-23T13:55:33.706Z:
-% 
-% Information about the homepage will be inserted above after the homepage is finished.
-% 
-% ^.
-
+Once the user has logged in to the website the user will be redirected to the home page of our website. On the home page the user will see a navigation bar at the top of the web page. On the navigation bar there will be several buttons. These buttons vary per user depending if the user is a admin or a user. 
+\newline
+\newline
+On the home page itself the user will see a short welcome message as well. In the welcome message we introduce the user to our website and explain the features we have on our website. 
 \pagebreak
 
 \subsection{The map page}
@@ -85,21 +81,23 @@ This page is used for viewing the gathered data. The data is displayed on the ma
 \newline
 This page features a map which can show you all kinds of data regarding pollution. On the left side there is a sidebar. This sidebar contains many options that can be used, for example: filters with which you can enable the heatmap, light pollution map and more.
 \newline
-There is also a search bar. With the search bar certain places like cities and towns can be found. Also, it can find a specific location by entering coordinates into the search bar.
-~\newline
+There is also a search bar. With the search bar certain places like cities and towns can be found. Also, it can find a specific location by entering coordinates into the search bar. You can also look for companies with the search bar functionalities.
+\newline
+On the bottom left corner of the map page you will find something called the time line. The time line gives you the possibility to look at the past days. When you change the date or the time on the time line the map will change to the according data and planet pictures.  
+\newline
+The user is also possible to zoom in and out of the map so that they can get a more precise look at the map itself. 
+\newline
 
 \subsubsection{The heatmap}
 If you want to see the temperature measured by the sensorhubs, this is the right option.
-The heatmap shows a representation of the temperature, using colors scaling from bright pink (cold) to red (warm). The colours are displayed on the map as a layer over the standard map.
-~\newline\newline
-\noindent
-\includegraphics[width=\textwidth]{kaart}
-% * <thom.de.jong3@hva.nl> 2018-04-23T13:57:14.016Z:
-% 
-% Even more maps in the future.
-% 
-% ^.
+The heatmap shows a representation of the temperature, using colors scaling from bright pink (cold) to red (warm). The colors are displayed on the map as a layer over the standard map.
+\newline
+\subsection{The gassmap} 
+The gass map shows the amount of gass that is found on a specific location. The specific location will show the values given of the gass. On the map you will see a number which corresponds to an amount of pollution in the air due to gass.  
 
+\subsection{The lightmap}
+The light map shows the amount of light pollution at a specific location. The light pollution is shown by a lamp icon. The lamp icon has lines above the lamp itself. This is used as our scale. So if the lamp icon has 0 lines it means there isn't any pollution. But if there are 7 lines above the lamp icon it means that there is a lot of pollution going on in the area.
+\noindent
 \pagebreak
 
 \subsection{The admin page}
@@ -109,7 +107,11 @@ This page shows two tables. One table for the Users and one for the sensorhubs. 
 \newline
 For example, the Users table contains data of all the users. With the add button you can add a user and with the delete button behind a specific user you can delete it. Then there is the edit button. The edit button is used to edit the profile of a specific user.
 \newline
-The sensorhub table simply shows the location of the used sensorhubs with pinpoints.
+The sensorhub table simply shows the location of the used sensorhubs with pinpoints. The sensorhub table also contains the same buttons as the users table does.
+\newline
+At the top of the admin page admins are able to change the logo they have the website. There are two buttons, one is named "Bestand kiezen" and the other is called "Upload".  With the bestand kiezen button admins are able to choose a picture from their computer. And with the Upload admins are able to change the logo of the website with the picture they just selected through the Bestand kiezen button.
+\newline
+In the sensorhub table there is also a button called "details". When you press on the details button you will be redirected to a different page. On this page you will see all the values in a table of that specific location. On the side of the table you will see a chart. On the chart you will see the same data as in the table but instead of in a table in a chart.
 
 \pagebreak
 
