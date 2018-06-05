@@ -51,7 +51,7 @@ The system uses sensors that can be placed in a specific area to measure the pol
 \newpage
 \section{The website}
 \subsection{Login and Logout}
-The login page is simple, use your username and password to login to the website. The website uses a role system, this means there are two roles a user of the website can be. You're either an admin or a user. 
+The login page is simple, use your username and password to login to the website. The website uses a role system, which means there are two roles a user of the website can be. You're either an admin or a user. 
 
 \begin{enumerate}[]
 	\item Use the upper input field for your username.
@@ -74,7 +74,7 @@ Both the login page and home page contain buttons to switch between the language
 Once the user has logged in to the website the user will be redirected to the home page of our website. On the home page the user will see a navigation bar at the top of the web page. On the navigation bar there will be several buttons. These buttons vary per user depending if the user is a admin or a user. 
 \newline
 \newline
-On the home page itself the user will see a short welcome message as well. In the welcome message we introduce the user to our website and explain the features we have on our website. 
+On the home page itself the user will see a short welcome message as well. In the welcome message we introduce the user to our website and explain the features we have on our website. The home page also contains links to our blog, GitHub and more information for help.
 \pagebreak
 
 \subsection{The map page}
@@ -82,21 +82,31 @@ This page is used for viewing the gathered data. The data is displayed on the ma
 \newline
 This page features a map which can show you all kinds of data regarding pollution. On the left side there is a sidebar. This sidebar contains many options that can be used, for example: filters with which you can enable the heatmap, light pollution map and more.
 \newline
+\newline
 There is also a search bar. With the search bar certain places like cities and towns can be found. Also, it can find a specific location by entering coordinates into the search bar. You can also look for companies with the search bar functionalities.
 \newline
 On the bottom left corner of the map page you will find something called the time line. The time line gives you the possibility to look at the past days. When you change the date or the time on the time line the map will change to the according data and planet pictures.  
 \newline
+Below the timeline there's a button called map information. By clicking on this button, you are able to see a legend of each pollution-related layer in the map; the temperature chart with the color spectrum, the light bulb images displaying the intensity levels and the numerical standards of the gas concentration.
+\newline
+\newline
 The user is also possible to zoom in and out of the map so that they can get a more precise look at the map itself. 
+\newline
+If a user clicks on one of the sensor hubs, they are able to see a timeline of graphs displaying the different types of pollution and how they changed overtime in the area of the sensor hub. These graphs are connected with the timeline in the options menu.
 \newline
 
 \subsubsection{The heatmap}
 If you want to see the temperature measured by the sensorhubs, this is the right option.
-The heatmap shows a representation of the temperature, using colors scaling from bright pink (cold) to red (warm). The colors are displayed on the map as a layer over the standard map.
+The heatmap shows a representation of the temperature, using colors scaling from bright pink (cold) to red (warm). The colors are displayed on the map as a layer over the standard map.\begin{figure}[h!]
+  \caption{The heatmap.}
+  \centering
+  \includegraphics[width=1\textwidth]{heatmap}
+\end{figure}
 \newline
-\subsubsection{The gassmap} 
-The gass map shows the amount of gass that is found on a specific location. The specific location will show the values given of the gass. On the map you will see a number which corresponds to an amount of pollution in the air due to gass.  
+\subsubsection{The gas map} 
+The gas map shows the amount of gass that is found on a specific location. The specific location will show the values given of the gss. On the map you will see a number which corresponds to an amount of pollution in the air due to gass.  
 
-\subsubsection{The lightmap}
+\subsubsection{The light map}
 The light map shows the amount of light pollution at a specific location. The light pollution is shown by a lamp icon. The lamp icon has lines above the lamp itself. This is used as our scale. So if the lamp icon has 0 lines it means there isn't any pollution. But if there are 7 lines above the lamp icon it means that there is a lot of pollution going on in the area.
 
 \newpage
