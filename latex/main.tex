@@ -65,11 +65,22 @@ After completing these steps you are being redirected to the homepage.
 On the top of this website there is a navigation bar, which is used to visit the several available pages. These pages include: the home page the map page and the admin page. The latter is only shown if the current user is an admin.
 \newline
 \newline
-If you want to log out, simply click the logout button at the very end of the navigation bar (see figure 1).
+If you want to log out, simply click the logout button at the very end of the navigation bar (see figure 2).
 \newline
 \newline
-Both the login page and home page contain buttons to switch between the languages Dutch and English (see figure 1).
+The login page contains buttons to switch between the languages Dutch and English (see figure 1).
 \newline
+All other pages also have these buttons in their dropdown menu(see figure 2).
+\newline
+
+
+\begin{figure}[h!]
+  \caption{The login page.}
+  \centering
+  \includegraphics[width=1\textwidth]{login}
+\end{figure}
+
+\pagebreak
 
 \subsection{The homepage.}
 Once the user has logged in to the website the user will be redirected to the home page of our website. On the home page the user will see a navigation bar at the top of the web page. On the navigation bar there will be several buttons. These buttons vary per user depending if the user is a admin or a user. 
@@ -88,7 +99,7 @@ This page is the primary feature of our product; the map. This map consists of d
 \newline
 
 \subsubsection*{Searching for a specific location}
-Want to find out the pollution of a specific location? See figure 1 and follow these steps:
+Want to find out the pollution of a specific location? See figure 2 and follow these steps:
 \begin{enumerate}
 \item Click on the search bar in the Options menu.
 \item Type in your desired location.
@@ -212,6 +223,11 @@ The Users table contains data of all the users. With the add button you can add 
 The SensorHubs table simply shows the location of the used sensor hubs with pinpoints. The sensor hub table also contains the same buttons as the users table does.
 \newline
 \newline
+The Limit values table shows the percentage of data around a sensorhub that outputs invalid data is invalid.
+\newline
+In this case 0.75 at the treshold-temperature means that 75 percent of the data is marked invalid.
+\newline
+\newline
 At the top of the admin page admins are able to change the logo they have the website. There are two buttons, one is named "Bestand kiezen" and the other is called "Upload". With the Bestand kiezen button admins are able to choose a picture from their computer. And with the Upload admins are able to change the logo of the website with the picture they just selected through the Bestand kiezen button.
 \newline
 
@@ -226,6 +242,11 @@ In the SensorHubs table there is also a button called "Details". When you press 
 \newpage
 \section{Further help}
 PLA25 is responsible for making this web application. If any bugs are to be found, please do contact us.
-Also contact us if any further help is needed or something is not yet clear.
+Also contact us if any further help is needed or something is not clear yet.
+\newline
+\newline
+The easiest way to report a bug is through our Github page:
+\newline
+https://github.com/PLA25/Website/issues
 
 \end{document}
