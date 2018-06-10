@@ -19,6 +19,10 @@
 \maketitle
 \vspace*{\fill}
 
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.5\textwidth]{front-page}
+\end{figure}
 
 
 \paragraph{Team members}
@@ -30,10 +34,6 @@
 	Martijn Vegter 		\` 	500775388
 \end{tabbing}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.5\textwidth]{front-page}
-\end{figure}
 \thispagestyle{empty}
 \newpage
 
@@ -53,6 +53,80 @@ The system uses so called "sensorhubs". Sensorhubs are a combination of multiple
 \newline
 \newline
 The system uses sensors that can be placed in a specific area to measure the pollution. These measurements can be monitored using the PDS website. This can be done by using the website's main feature, the map.
+
+\newpage
+
+\section{How to Set-up the system}
+
+\subsection{Step 1: Clone the repository and install the dependencies}
+Step 1 can be done in two different ways.
+\newline
+\newline
+Method 1:
+\newline
+In your terminal:
+\newline
+git clone https://github.com/PLA25/Website.git
+\newline
+cd Website/Source
+\newline
+npm install
+\newline
+\newline
+Method 2:
+\newline
+Download the zip file from [here](https://github.com/
+\newline
+PLA25/Website/archive/master.zip), extract the files and open the folder Website-master/Source.
+\newline
+Open your terminal on the location of the folder and run the following command:
+\newline
+npm install
+\newline
+
+\subsection{Step 2: Configure the system}
+Open your terminal in the Website/Source folder (or use the terminal you just used) and run the following command:
+\newline
+npm start
+\newline
+\newline
+Wait for the server to start and visit localhost:3000 or YOUR-DOMAIN-OR-IP:3000 in your web browser.
+\newline
+Fill in all the information on the page and press the SAVE CONFIG button.
+\newline
+Your Planet key can be found on the planet.com website, for more information about how to find your API key visit https://support.planet.com/hc/en-us/articles/212318178-What-is-my-API-key-
+\newline
+\newline
+Now wait for the server to reboot and press the Click Me! button.
+\newline
+
+\subsection{Step 3: Configure the database}
+This will happen automatically when you start-up the system for the first time.
+\newline
+\newline
+Yep, it's that easy!
+\newline
+If you ever lose access to the system, just delete the config document from the database and the default users will be back in the system.
+\newline
+
+\subsection{Step 4: Starting the system}
+In the web browser login using the credentials (Table 1).
+\newline
+\begin{table}[htb]
+\centering
+\caption{Credentials}
+\label{my-label}
+\begin{tabular}{lll}
+Username & Password & About                      \\
+admin    & admin    & This is the admin account! \\
+user     & user     & This is the default user. 
+\end{tabular}
+\end{table}
+
+
+\subsection{Step 5: Security}
+Change the admin and user Password in the My Account panel!
+
 
 \newpage
 \section{The website}
